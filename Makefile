@@ -1,6 +1,6 @@
 export BUILDROOT=cobol-build
 
-export PROJECTROOT=todoliste
+export PROJECTROOT=..
 
 all:
 	$(MAKE) -C $(BUILDROOT) $@
