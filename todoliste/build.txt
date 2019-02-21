@@ -1,0 +1,5 @@
+BUILD BINARY cgiutil  USING cgiutil.cbl
+BUILD BINARY todoliste    USING todoliste.cbl
+
+TEST SOURCE cgiutil.cbl        USING utiltest.cbl
+TEST SOURCE todoliste.cbl USING todolisttests.cbl
