@@ -1,5 +1,5 @@
-BUILD MODULE cgiutil  USING cgiutil.cbl
+BUILD BINARY TODOHANDLER USING TODOHANDLER.cbl CGIUTIL.cbl
 BUILD BINARY todoliste USING todoliste.cbl
 
-TEST SOURCE cgiutil.cbl  WITH DRIVER cgiutil-driver.cbl USING utiltest.cbl
+TEST SOURCE CGIUTIL.cbl  WITH DRIVER cgiutil-driver.cbl USING utiltest.cbl
 TEST SOURCE todoliste.cbl USING todolisttests.cbl
