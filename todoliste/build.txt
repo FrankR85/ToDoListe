@@ -1,4 +1,3 @@
 BUILD EXECUTABLE TODOHANDLER USING TODOHANDLER.cbl CGIUTIL.cbl TODOLISTE.cbl
 
 TEST SOURCE CGIUTIL.cbl  WITH DRIVER cgiutil-driver.cbl USING utiltest.cbl
-TEST SOURCE todoliste.cbl WITH DRIVER todolist-driver.cbl USING todolisttests.cbl
