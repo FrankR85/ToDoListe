@@ -16,6 +16,7 @@ cd /etc/apache2/conf-available
 sudo rm serve-cgi-bin.conf
 sudo ln -s /vagrant/apache/config/serve-cgi-bin.conf serve-cgi-bin.conf
 cd /usr/lib/cgi-bin/
+
 #set symlinks to executable cobol pgms
 sudo ln -s /vagrant/todoliste/target/TODOHANDLER todohandler
 
