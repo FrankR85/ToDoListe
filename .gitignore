@@ -2,3 +2,4 @@ Vagrantfile
 .vagrant
 deploy/
 data/
+*~

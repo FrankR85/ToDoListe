@@ -40,6 +40,7 @@ clean-data:
 clean:
 	$(MAKE) -C $(BUILDROOT) $@
 	rm -rf deploy
+	rm *~
 
 build:
 	$(MAKE) -C $(BUILDROOT) $@
