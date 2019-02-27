@@ -1,7 +1,7 @@
 echo "Provisioning..."
 sudo apt-get update
 
-sudo apt-get install -y apache2 npm nodejs-legacy
+sudo apt-get install -y apache2 npm nodejs-legacy uwsgi
 
 cd /var/www/html
 sudo ln -s /vagrant/www www
