@@ -1,4 +1,6 @@
-Vagrantfile
+target
+build
+VagrantfileProxy
 .vagrant
 deploy/
 data/
