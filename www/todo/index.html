@@ -27,17 +27,17 @@
         var form = document.forms['f1'];
         var word = form.content.value;
         qstr = 'content=' + escape(word);  // NOTE: no '?' before querystring
-        qstr = qstr + "&action=add"
+        qstr = qstr + "&action=add\n"
         self.xmlHttpReq.send(qstr);
         showTodoList();
     }
     function showTodoList() {
         initXmlRequests();
-        self.xmlHttpReq.send("action=show");
+        self.xmlHttpReq.send("action=show\n");
     }
     function clearList() {
         initXmlRequests();
-        self.xmlHttpReq.send("action=delete");
+        self.xmlHttpReq.send("action=delete\n");
     }
 
     function updatepage(str){

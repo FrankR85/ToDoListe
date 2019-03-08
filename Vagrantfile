@@ -7,8 +7,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "installcobol3.sh"
   config.vm.provision :shell, path: "bootstrap.sh"
 
-  config.proxy.no_proxy = "localhost,127.0.0.1"
-
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
   end
