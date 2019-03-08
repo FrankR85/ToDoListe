@@ -15,7 +15,20 @@ Nach der Installation von Vagrant das git-Repo clonen und in der Kommandozeile
 vagrant up
 ```
 eingeben.
-Danach sollte die ToDo-Liste unter http://localhost:8080/todo erreichbar sein.
+
+Verbindet man sich anschließend per
+```
+vagrant ssh
+```
+und führt im Verzeichnis ```/vagrant``` nacheinander
+```
+make
+```
+und
+```
+make run-server
+```
+aus, sollte die ToDo-Liste unter http://localhost:8080 erreichbar sein.
 
 #### Manuelle Installation
 Wer schon Linux benutzt und nicht den Umweg über Vagrant gehen möchte, kann folgendes machen:
