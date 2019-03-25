@@ -48,6 +48,9 @@ build:  init-submodules
 test:	build
 	$(MAKE) -C $(BUILDROOT) $@
 
+autotest:	build
+	$(MAKE) -C $(BUILDROOT) $@
+
 init-submodules:
 	git submodule init
 	git submodule update
