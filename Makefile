@@ -42,8 +42,12 @@ clean:
 	rm -rf deploy
 	rm *~
 
-build:
+build:  init-submodules
 	$(MAKE) -C $(BUILDROOT) $@
 
 test:	build
 	$(MAKE) -C $(BUILDROOT) $@
+
+init-submodules:
+	git submodule init
+	git submodule update
