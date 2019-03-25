@@ -25,7 +25,7 @@ debug-server: deploy
 
 	uwsgi --ini uwsgi.conf
 
-deploy: build test $(DATABASE)
+deploy: build $(DATABASE)
 	mkdir -p deploy/cgi-bin
 	cp todoliste/target/TODOHANDLER deploy/cgi-bin/todohandler
 	ln -fs ../../$(DATABASE) deploy/cgi-bin/todolist.txt
@@ -45,5 +45,5 @@ clean:
 build:
 	$(MAKE) -C $(BUILDROOT) $@
 
-test:
+test:	build
 	$(MAKE) -C $(BUILDROOT) $@
