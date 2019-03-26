@@ -15,8 +15,8 @@
        WORKING-STORAGE SECTION.
        01 IN-STATUS            PIC 9999.
        01 NEWLINE              PIC X     VALUE X'0A'.
-       COPY todoactions.
-       COPY cgiutildata.
+       COPY TODOACTIONS.
+       COPY CGIUTILDATA.
 
        PROCEDURE DIVISION.
            PERFORM U01-PRINT-HEADER

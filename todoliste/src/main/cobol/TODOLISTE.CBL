@@ -27,8 +27,8 @@
            05 ITEM-ID PIC 9(5).
            05 ITEM-CONTENT PIC X(35).
        LINKAGE SECTION.
-        COPY todoactions.
-        COPY todoitem.
+        COPY TODOACTIONS.
+        COPY TODOITEM.
        PROCEDURE DIVISION USING TODO-ACTION NEW-TODO-ITEM.
            EVALUATE TRUE
            WHEN ACTION-SHOW
