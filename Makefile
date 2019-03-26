@@ -5,7 +5,7 @@ export PROJECTROOT=..
 DBDIR    := data
 DATABASE := $(DBDIR)/todolist.txt
 
-all:	deploy
+all:	test deploy
 
 run-server: deploy
 	uwsgi --ini uwsgi.conf
