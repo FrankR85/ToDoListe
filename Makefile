@@ -40,7 +40,7 @@ clean-data:
 clean:
 	$(MAKE) -C $(BUILDROOT) $@
 	rm -rf deploy
-	rm *~
+	rm -f *~
 
 build:  init-submodules
 	$(MAKE) -C $(BUILDROOT) $@
